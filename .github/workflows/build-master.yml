@@ -17,4 +17,7 @@ jobs:
         with:
           args:
             build --code-coverage
-
+      - name: Build with Gradle  
+        run: |
+          set -e   
+          bash <(curl -s https://codecov.io/bash)
