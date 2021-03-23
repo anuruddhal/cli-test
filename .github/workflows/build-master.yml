@@ -16,5 +16,5 @@ jobs:
           CI_BUILD: true
         with:
           args:
-            build 
+            build --code-coverage
 
