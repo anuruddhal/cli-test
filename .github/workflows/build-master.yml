@@ -12,6 +12,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Ballerina Build
         uses: ballerina-platform/ballerina-action@slalpha3
+        env:
+          CI_BUILD: true
         with:
           args:
             build 
